@@ -15,8 +15,8 @@ const App = () => {
   return (
     <div className="App">
       <div className="header">
-        {currentDay ? <div>You've selected day {currentDay},</div> : <div className="zeroState">Choose a day</div>}
-        {currentHour ?   "hour " + currentHour + "." : <div className="zeroState">, then choose an hour.</div>}
+        {currentDay ? <div>You've selected day {currentDay}</div> : <div className="zeroState">Choose a day</div>}
+        {currentHour ?   ", hour " + currentHour + "." : <div className="zeroState">, then choose an hour.</div>}
       </div>
       <div className="daysWrapper">
         {days.map((day: number) => (
