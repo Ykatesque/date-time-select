@@ -8,26 +8,38 @@ $color-dark-green: #2b211d;
 $color-white-green: #ebf3eb;
 $color-grey: #719c88;
 
+
+@mixin green-border {
+  border: 4px solid $color-green;
+}
+
+
+
 html, body {
   font-size: 16px;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  transition: all 1000ms ease-in-out;
+
 }
 
 .App {
+  @include green-border;
   display: flex;
   flex-direction: column;
-  margin: 0rem auto;
+  margin: 4rem auto;
   align-items: center;
   background: $color-white-green;
-  height: 100vh;
+  width: 550px;
+  padding: 2rem;
+
 }
 
 .daysWrapper {
   display: flex;
   flex-direction: row;
-  margin: 1rem auto;
+  padding: 1rem auto;
   grid-gap: 1rem;
   min-width: 550px;
   justify-content: space-around;
@@ -50,9 +62,8 @@ html, body {
   color: $color-green;
   min-width: 550px;
   justify-content: center;
-  margin-top: 2rem;
   align-items: center;
-
+  min-height: 100px;
 }
 
 .zeroState {
@@ -70,4 +81,5 @@ html, body {
 .resultsWrapper {
   display: flex;
   flex-direction: row;
+
 }
