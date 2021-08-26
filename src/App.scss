@@ -1,0 +1,51 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+
+html, body {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  margin: 0rem auto;
+  align-items: center;
+  background: #ebf3eb;
+  height: 100vh;
+}
+
+.daysWrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem auto;
+  grid-gap: 1rem;
+  justify-content: space-around;
+}
+.hoursWrapper {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 1rem;
+  width: 500px;
+
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  grid-gap: 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 2rem 0rem;
+  color: green;
+
+}
+
+.zeroState {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: grey;
+
+}
