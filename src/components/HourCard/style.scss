@@ -5,13 +5,16 @@
     width: 500px;
     margin: 1rem auto;
     padding-bottom: 1rem;
-    border-bottom: 1px solid #1e611e;
+    border-bottom: 3px solid #719c88;
+    width: 530px;
+
 }
 
 .numberWrapper {
     display: flex;
-   font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
+    padding-left: 0.5rem;
     line-height: 1.5rem;
     align-items: center;
     letter-spacing: 1px;

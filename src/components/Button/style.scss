@@ -1,5 +1,7 @@
 //this mixin would go into base.scss/button
 
+@import '../colors.scss';
+
 @mixin button {
   display: inline-flex;
   justify-content: center;
@@ -9,7 +11,7 @@
   border-radius: 0.25rem;
   border: 0;
   background-color:  white;
-  color: green;
+  color: $color-green;
   font-weight: bold;
   outline: 0;
   text-decoration: none;
@@ -21,7 +23,7 @@
 .btn {
   @include button;
   &:hover {
-    background-color: #0080009e;
+    background-color: $color-medium-green;
     color: white;
   }
 }
@@ -30,20 +32,21 @@
     @include button;
     font-size: 1.5rem;
     border-width: 4px;
-    border-color: grey;
+    border-color: $color-grey;
     padding: 1rem 3.25rem;
 }
 
 .secondary {
   @include button;
-  border: 2px solid green;
-  width: 100px;
+  border: 2px solid $color-green;
+  width: 150px;
   padding: 0.75rem 2rem;
-  color: green;
+  color: $color-green;
+  white-space: nowrap;
   font-size: 1rem;
 }
 
 .selected {
-  background-color: green;
+  background-color: $color-green;
   color: white;
 }
