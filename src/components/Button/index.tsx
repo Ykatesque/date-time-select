@@ -13,7 +13,7 @@ const Button = ({text, isSelected, onClick, isPrimary = true, }: Props) => {
       <button onClick={() => onClick()} className={ isSelected ? "btn primary selected" :"btn primary" }> {text} </button>
     : 
       <button  onClick={() => onClick()} className={ isSelected ? "btn secondary selected" : "btn secondary" }>
-        {text}
+        { isSelected ? "Selected" : text}
       </button>
   );
 };
